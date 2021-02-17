@@ -13,6 +13,8 @@
 		50A3DB1625D14DFC008E59E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A3DB1425D14DFC008E59E3 /* Main.storyboard */; };
 		50A3DB1825D14E03008E59E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A3DB1725D14E03008E59E3 /* Assets.xcassets */; };
 		50A3DB1B25D14E03008E59E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A3DB1925D14E03008E59E3 /* LaunchScreen.storyboard */; };
+		50A3DB2525D15DF5008E59E3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A3DB2425D15DF5008E59E3 /* TableViewCell.swift */; };
+		50A3DB2925D17261008E59E3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A3DB2825D17261008E59E3 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		50A3DB1725D14E03008E59E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50A3DB1A25D14E03008E59E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50A3DB1C25D14E03008E59E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50A3DB2425D15DF5008E59E3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		50A3DB2825D17261008E59E3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				50A3DB0D25D14DFC008E59E3 /* ToDoList */,
-				50A3DB0C25D14DFC008E59E3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +54,7 @@
 				50A3DB0B25D14DFC008E59E3 /* ToDoList.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		50A3DB0D25D14DFC008E59E3 /* ToDoList */ = {
@@ -58,11 +62,14 @@
 			children = (
 				50A3DB0E25D14DFC008E59E3 /* AppDelegate.swift */,
 				50A3DB1025D14DFC008E59E3 /* SceneDelegate.swift */,
+				50A3DB2825D17261008E59E3 /* Model.swift */,
 				50A3DB1225D14DFC008E59E3 /* ViewController.swift */,
+				50A3DB2425D15DF5008E59E3 /* TableViewCell.swift */,
 				50A3DB1425D14DFC008E59E3 /* Main.storyboard */,
 				50A3DB1725D14E03008E59E3 /* Assets.xcassets */,
 				50A3DB1925D14E03008E59E3 /* LaunchScreen.storyboard */,
 				50A3DB1C25D14E03008E59E3 /* Info.plist */,
+				50A3DB0C25D14DFC008E59E3 /* Products */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -137,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50A3DB2925D17261008E59E3 /* Model.swift in Sources */,
 				50A3DB1325D14DFC008E59E3 /* ViewController.swift in Sources */,
+				50A3DB2525D15DF5008E59E3 /* TableViewCell.swift in Sources */,
 				50A3DB0F25D14DFC008E59E3 /* AppDelegate.swift in Sources */,
 				50A3DB1125D14DFC008E59E3 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +298,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S4VTW7X9U3;
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S4VTW7X9U3;
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
